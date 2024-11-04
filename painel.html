@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Chamamento</title>
+</head>
+<body>
+    <h1>Painel de Chamamento</h1>
+    {% if senha_atual %}
+        <h2>Senha {{ senha_atual[0] }}</h2>
+        <h3>Guichê {{ senha_atual[1] }}</h3>
+    {% else %}
+        <h2>Aguardando próximo atendimento...</h2>
+    {% endif %}
+</body>
+</html>
